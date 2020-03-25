@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hudaqian.github.io</id>
+    <title>小九的酒窝</title>
+    <updated>2020-03-25T09:44:53.801Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hudaqian.github.io"/>
+    <link rel="self" href="https://hudaqian.github.io/atom.xml"/>
+    <subtitle>&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;</subtitle>
+    <logo>https://hudaqian.github.io/images/avatar.png</logo>
+    <icon>https://hudaqian.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 小九的酒窝</rights>
+    <entry>
+        <title type="html"><![CDATA[计算机三大原则]]></title>
+        <id>https://hudaqian.github.io/post/computertheory001/</id>
+        <link href="https://hudaqian.github.io/post/computertheory001/">
+        </link>
+        <updated>2019-06-21T05:15:43.000Z</updated>
+    </entry>
+</feed>
