@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hudaqian.github.io</id>
     <title>小九的酒窝</title>
-    <updated>2020-03-25T09:44:53.801Z</updated>
+    <updated>2020-06-09T14:51:56.965Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hudaqian.github.io"/>
     <link rel="self" href="https://hudaqian.github.io/atom.xml"/>
@@ -11,10 +11,73 @@
     <icon>https://hudaqian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 小九的酒窝</rights>
     <entry>
-        <title type="html"><![CDATA[计算机三大原则]]></title>
-        <id>https://hudaqian.github.io/post/computertheory001/</id>
-        <link href="https://hudaqian.github.io/post/computertheory001/">
+        <title type="html"><![CDATA[[Python]39助手心理科医院列表抓取记录]]></title>
+        <id>https://hudaqian.github.io/post/python_hospitallist/</id>
+        <link href="https://hudaqian.github.io/post/python_hospitallist/">
         </link>
-        <updated>2019-06-21T05:15:43.000Z</updated>
+        <updated>2019-11-23T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Python]通过正则批量替换文件名字]]></title>
+        <id>https://hudaqian.github.io/post/python-filenamechanges/</id>
+        <link href="https://hudaqian.github.io/post/python-filenamechanges/">
+        </link>
+        <updated>2019-11-14T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Python]39助手心理科医生列表抓取记录]]></title>
+        <id>https://hudaqian.github.io/post/python_doctorlist/</id>
+        <link href="https://hudaqian.github.io/post/python_doctorlist/">
+        </link>
+        <updated>2019-11-14T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOS13部分适配]]></title>
+        <id>https://hudaqian.github.io/post/ios13Fit/</id>
+        <link href="https://hudaqian.github.io/post/ios13Fit/">
+        </link>
+        <updated>2019-09-09T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拆读《小狗钱钱》]]></title>
+        <id>https://hudaqian.github.io/post/Primary_Mid_17/</id>
+        <link href="https://hudaqian.github.io/post/Primary_Mid_17/">
+        </link>
+        <updated>2019-07-22T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[理财小游戏：第八天]]></title>
+        <id>https://hudaqian.github.io/post/MakeMoneyGame_8/</id>
+        <link href="https://hudaqian.github.io/post/MakeMoneyGame_8/">
+        </link>
+        <updated>2019-07-05T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[理财小游戏：第七天]]></title>
+        <id>https://hudaqian.github.io/post/MakeMoneyGame_7/</id>
+        <link href="https://hudaqian.github.io/post/MakeMoneyGame_7/">
+        </link>
+        <updated>2019-07-04T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[理财小游戏：第六天]]></title>
+        <id>https://hudaqian.github.io/post/MakeMoneyGame_6/</id>
+        <link href="https://hudaqian.github.io/post/MakeMoneyGame_6/">
+        </link>
+        <updated>2019-07-03T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[理财小游戏：第五天]]></title>
+        <id>https://hudaqian.github.io/post/MakeMoneyGame_5/</id>
+        <link href="https://hudaqian.github.io/post/MakeMoneyGame_5/">
+        </link>
+        <updated>2019-07-02T04:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[理财小游戏：第四天]]></title>
+        <id>https://hudaqian.github.io/post/MakeMoneyGame_4/</id>
+        <link href="https://hudaqian.github.io/post/MakeMoneyGame_4/">
+        </link>
+        <updated>2019-07-01T04:00:00.000Z</updated>
     </entry>
 </feed>
