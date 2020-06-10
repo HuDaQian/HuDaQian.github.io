@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>数据加密 | 小九的酒窝</title>
+<title>解决githubPages搭建的博客打开很慢的问题 | 小九的酒窝</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,13 +24,13 @@
 
 
 
-    <meta name="description" content="
-对称加密
-对称加密是加密和解密采用相同的密钥，代表算法AES、DES。
-这个加密模式有一个很大的缺点：假设信息由甲方传输给乙方，甲方采用密钥进行加密，那么必须想办法把密钥告诉乙方。如何保存和传输密钥就成了一件很麻烦的事情。
-非对称加密
-非..." />
-    <meta name="keywords" content="计算机原理" />
+    <meta name="description" content="打开github博客源文件，找到index.html。
+根据之前打开慢的情况，
+排查到问题在于unpkg被墙了。
+所以，替换unpkg为unpkg.zhimg
+
+..." />
+    <meta name="keywords" content="网络" />
   </head>
   <body>
     <div id="app" class="main">
@@ -113,49 +113,22 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">数据加密</h2>
-            <div class="post-date">2019-06-21</div>
+            <h2 class="post-title">解决githubPages搭建的博客打开很慢的问题</h2>
+            <div class="post-date">2020-06-10</div>
             
             <div class="post-content" v-pre>
-              <hr>
-<h3 id="对称加密">对称加密</h3>
-<p>对称加密是加密和解密采用相同的密钥，代表算法AES、DES。</p>
-<p>这个加密模式有一个很大的缺点：假设信息由甲方传输给乙方，甲方采用密钥进行加密，那么必须想办法把密钥告诉乙方。如何保存和传输密钥就成了一件很麻烦的事情。</p>
-<h3 id="非对称加密">非对称加密</h3>
-<p>非对称加密需要两份密钥：公钥和私钥。用公钥加密的数据需要用私钥来解密，用私钥加密的数据要用公钥来解密，代表算法RSA。</p>
-<p>以RSA算法为例，在加密之前首先要生成公钥和私钥</p>
-<blockquote>
-<ul>
-<li>随机选择两个质数p=61;q=53;(质数越大，越难破解)</li>
-<li>计算两个质数的乘积：n=61 *<br>
-53=3233，二进制就是110010100001，这个密钥是12位到的，实际应用中的RSA一般为1024位或者2048位</li>
-<li>计算n的欧拉函数φ(n) φ(n) = (p-1)(q-1) = 3120</li>
-<li>随机选择一个整数e，条件是1&lt; e &lt; φ(n)，且e与φ(n) 互质。比如选择 e = 17</li>
-<li>计算e对于φ(n)的模反元素d。所谓&quot;模反元素&quot;就是指有一个整数d，可以使得ed被φ(n)除的余数为1。找到一组整数解，可以得出 d =<br>
-2753<br>
-<code>ed - 1 = kφ(n) 即 17d - 1 = k * 3012。</code></li>
-</ul>
-</blockquote>
-<p>则（n,e）=（3233,17）为公钥 （n,d）=（3233,2753）为私钥</p>
-<p>接着，用公钥对数据进行加密：</p>
-<p>RSA加密要求被加密的信息m必须是整数（字符串取ascii或者unicode），且m &lt; n。这里待加密的m = 65，根据公式进行加密，得出加密后的结果c<br>
-= 2970</p>
-<pre><code>m^e ≡ c (mod n) 即  65^17 ≡ c (mod 3233)
-c = 2970
-</code></pre>
-<p>按照私钥对c = 2970进行解密</p>
-<pre><code>c^d ≡ m (mod n) 即 2970 ^ 2753 = m(mod 3233)
-</code></pre>
-<p>得出 m = 65</p>
-<p>对于更长的数据可以采用分段加密，或者采用DES加密数据后，再把密钥用RSA加密。接受者用RSA解密密钥，然后再用DES解密数据。</p>
-<p><a href="https://hudaqian.github.io/tag/baseKnowledge"> 计算机原理 </a></p>
+              <p>打开github博客源文件，找到index.html。<br>
+根据之前打开慢的情况，<br>
+排查到问题在于unpkg被墙了。<br>
+所以，替换unpkg为unpkg.zhimg<br>
+<img src="https://hudaqian.github.io/post-images/1591752240943.gif" alt="替换" loading="lazy"></p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://hudaqian.github.io/tag/BaseKnowledge/" class="tag">
-                    计算机原理
+                  <a href="https://hudaqian.github.io/tag/Internal/" class="tag">
+                    网络
                   </a>
                 
               </div>
@@ -163,9 +136,9 @@ c = 2970
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://hudaqian.github.io/post/computertheory001/">
+                <a href="https://hudaqian.github.io/post/python-grideaBlogMove/">
                   <h3 class="post-title">
-                    计算机三大原则
+                    [Python] Gridea 博客迁移
                   </h3>
                 </a>
               </div>
