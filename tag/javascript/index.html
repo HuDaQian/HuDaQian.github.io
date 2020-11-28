@@ -1,233 +1,485 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
-
-<title>javascript | 小九的酒窝</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico?v=1606553410345">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>小九的酒窝</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;"/>
+<meta name="keywords" content="&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;"/>
+<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico">
 <link rel="stylesheet" href="https://hudaqian.github.io/styles/main.css">
 
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- Comment -->
 
 
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
-    <meta name="description" content="&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;">
-  </head>
-  <body>
-    <div id="app" class="main">
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hudaqian.github.io">
-        <img src="https://hudaqian.github.io/images/avatar.png?v=1606553410345" class="site-logo">
-        <h1 class="site-title">小九的酒窝</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+
+</head>
+<body class="tag-template">
+<div id="page" class="site">
+
+    <header class="site-header">
+    <h1 class="site-title"><a href="https://hudaqian.github.io">小九的酒窝</a></h1>
+    <a class="sidebar-toggle"><span class="screen-reader-text">Menu</span><span class="icon" aria-hidden="true"></span></a>
+</header>
+
+<aside class="sidebar">
+    <div class="sidebar-scrollable">
+        <div class="inner">
+            <div class="widget-area">
+                <!-- 菜单 -->
+                <nav class="site-navigation">
+                    <h2>小九的酒窝</h2>
+                    <ul class="menu">
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/"
+                                
+                                >首页</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/tags"
+                                
+                                >标签</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="https://hudaqian.github.io/post/aboutme"
+                                
+                                >关于</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="https://github.com/HuDaQian"
+                                
+                                   target="_blank"
+                                        
+                                >Github</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="https://hudaqian.github.io/GameLibrary/My2048/index.html"
+                                
+                                   target="_blank"
+                                        
+                                >2048</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="https://hudaqian.github.io/GameLibrary/CatGame/index.html"
+                                
+                                   target="_blank"
+                                        
+                                >CatchCat</a>
+                            </li>
+                        
+                    </ul>
+                </nav>
+
+                <section class="widget widget-about">
+                    <h2 class="widget-title">关于</h2>
+                    <p>&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;</p>
+                </section>
+
+                <section class="widget widget-tags">
+                    <h2 class="widget-title">标签</h2>
+                    <div class="tagcloud">
+                        
+                            <a href="https://hudaqian.github.io/tag/Algorithms/" class="button">
+                                算法
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/BaseKnowledge/" class="button">
+                                计算机原理
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/iOS/" class="button">
+                                iOS
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/Internal/" class="button">
+                                网络
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/python/" class="button">
+                                Python
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/MakeMoney/" class="button">
+                                理财
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/DesignPatterns/" class="button">
+                                设计模式
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/javascript/" class="button">
+                                javascript
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/MacOS/" class="button">
+                                MacOS
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                            <a href="https://hudaqian.github.io/tag/spirit/" class="button">
+                                心情
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                    </div>
+                </section>
+
+            </div>
+            <a class="sidebar-toggle"><span class="screen-reader-text">Close</span><span class="icon" aria-hidden="true"></span></a>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="https://hudaqian.github.io/post/aboutme" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="https://github.com/HuDaQian" class="site-nav" target="_blank">
-            Github
-          </a>
-        
-      
-        
-          <a href="https://hudaqian.github.io/GameLibrary/My2048/index.html" class="site-nav" target="_blank">
-            2048
-          </a>
-        
-      
-        
-          <a href="https://hudaqian.github.io/GameLibrary/CatGame/index.html" class="site-nav" target="_blank">
-            CatchCat
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      <h3>最香不过荷包蛋<br>最美不过夜归人<h3>
-    </div>
-    <div class="site-footer">
-      <h3>Miloy❤️Grace</h3> | <a class="rss" href="https://hudaqian.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</aside>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: javascript</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript007/">
-                  <h2 class="post-title">JavaScript基础知识梳理（七）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-18
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript006/">
-                  <h2 class="post-title">JavaScript基础知识梳理（六）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-17
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript005/">
-                  <h2 class="post-title">JavaScript基础知识梳理（五）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-16
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript004/">
-                  <h2 class="post-title">JavaScript基础知识梳理（四）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript003/">
-                  <h2 class="post-title">JavaScript基础知识梳理（三）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-08
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript002/">
-                  <h2 class="post-title">JavaScript基础知识梳理（二）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-07
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://hudaqian.github.io/post/javascript001/">
-                  <h2 class="post-title">JavaScript基础知识梳理（一）</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-06
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+    <main class="site-main">
+        <div class="site-content">
 
-          <div class="pagination-container">
-  
-  
-</div>
+            <header class="cover page-header">
+                <div class="cover-bg"
+                     style="background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);"></div>
+                <div class="cover-content">
+                    <div class="inner">
+                        <div class="post-count"></div>
+                        <h1 class="page-title" style="font-size: 46px;">javascript</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div id="post-list" class="post-list inner">
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript007/">JavaScript基础知识梳理（七）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">1 min read</span>
+                                    <time class="published" datetime="2019-03-18">2019-03-18</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript007/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript006/">JavaScript基础知识梳理（六）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">4 min read</span>
+                                    <time class="published" datetime="2019-03-17">2019-03-17</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript006/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript005/">JavaScript基础知识梳理（五）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">2 min read</span>
+                                    <time class="published" datetime="2019-03-16">2019-03-16</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript005/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript004/">JavaScript基础知识梳理（四）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">4 min read</span>
+                                    <time class="published" datetime="2019-03-15">2019-03-15</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript004/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript003/">JavaScript基础知识梳理（三）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">2 min read</span>
+                                    <time class="published" datetime="2019-03-08">2019-03-08</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript003/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript002/">JavaScript基础知识梳理（二）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">2 min read</span>
+                                    <time class="published" datetime="2019-03-07">2019-03-07</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript002/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://hudaqian.github.io/tag/javascript/">javascript&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://hudaqian.github.io/javascript001/">JavaScript基础知识梳理（一）</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">2 min read</span>
+                                    <time class="published" datetime="2019-03-06">2019-03-06</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://hudaqian.github.io/javascript001/">
+                                    Read More
+                                    <span aria-hidden="true"> </span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+            </div>
+
+            <nav class="pagination">
+    <h2 class="screen-reader-text">Posts Navigation</h2>
+    <div class="inner">
+        <span class="page-number"></span>
+        
+        
+    </div>
+</nav>
+
+
 
         </div>
-      </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="inner">
+        <!-- 社交 -->
+        <div class="offsite-links">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+
+        <div class="site-info">
+            THEME BY <a href="https://github.com/GalaxySuze/gridea-theme-subtle-galaxy">Subtle Galaxy</a>, REFERENCE FROM <a href="https://subtle.justgoodthemes.com/">Subtle</a><br/>
+            <h3>Miloy❤️Grace</h3>
+        </div>
+        <a href="#page" class="arrow-up" data-scroll><span class="screen-reader-text">Back to the top</span></a>
     </div>
+</footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</div>
+
+<script src="https://hudaqian.github.io/media/scripts/_core/plugins.js"></script>
+<script src="https://hudaqian.github.io/media/scripts/_core/custom.js"></script>
+
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://hudaqian.github.io/media/scripts/_vendors/md5.min.js"></script>
+
 <script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
 
 </script>
 
@@ -235,6 +487,5 @@ var app = new Vue({
 
 
 
-
-  </body>
+</body>
 </html>
