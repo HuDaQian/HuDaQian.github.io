@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hudaqian.github.io</id>
     <title>小九的酒窝</title>
-    <updated>2020-12-03T00:21:00.608Z</updated>
+    <updated>2020-12-03T13:48:13.863Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hudaqian.github.io"/>
     <link rel="self" href="https://hudaqian.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://hudaqian.github.io/images/avatar.png</logo>
     <icon>https://hudaqian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 小九的酒窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Java实现双向链表]]></title>
+        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_05/</id>
+        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_05/">
+        </link>
+        <updated>2020-12-03T13:46:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java实现单向链表]]></title>
+        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_04/</id>
+        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_04/">
+        </link>
+        <updated>2020-12-03T13:43:22.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[重读-《我的第一本算法书》-03 非线性排列的数据结构]]></title>
         <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_03/</id>
@@ -99,19 +113,5 @@
         <link href="https://hudaqian.github.io/python-grideaBlogMove/">
         </link>
         <updated>2020-06-09T15:14:36.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Python]39助手心理科医院列表抓取记录]]></title>
-        <id>https://hudaqian.github.io/python_hospitallist/</id>
-        <link href="https://hudaqian.github.io/python_hospitallist/">
-        </link>
-        <updated>2019-11-23T04:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Python]通过正则批量替换文件名字]]></title>
-        <id>https://hudaqian.github.io/python-filenamechanges/</id>
-        <link href="https://hudaqian.github.io/python-filenamechanges/">
-        </link>
-        <updated>2019-11-14T04:00:00.000Z</updated>
     </entry>
 </feed>
