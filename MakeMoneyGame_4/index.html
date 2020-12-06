@@ -1,198 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>小九的酒窝</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="description" content="&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;"/>
-<meta name="keywords" content="&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;"/>
-<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico">
+  <head>
+    <meta charset="utf-8" >
+
+<title>理财小游戏：第四天 | 小九的酒窝</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.min.css">
+<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico?v=1607243859147">
 <link rel="stylesheet" href="https://hudaqian.github.io/styles/main.css">
 
 
-<!-- Comment -->
-
-    
-        <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css" rel="stylesheet">
-    
-
-    
 
 
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-</head>
-<body class="post-template">
-<div id="page" class="site">
+    <meta name="description" content="与岛上各种人周旋之后，你开始总结出自己的经验和技巧，渐渐知道该怎么判断：该把鱼投资给谁：该把鱼借给谁。你发现，鱼还真是个神奇的东西!从每个人对待&quot;鱼&quot;的态度，可以看出这个人对待生活的态度。随着鱼越来越多，岛上掀起了一股关..." />
+    <meta name="keywords" content="理财" />
+  </head>
+  <body>
+    <div id="app" class="main">
 
-    <header class="site-header">
-    <h1 class="site-title"><a href="https://hudaqian.github.io">小九的酒窝</a></h1>
-    <a class="sidebar-toggle"><span class="screen-reader-text">Menu</span><span class="icon" aria-hidden="true"></span></a>
-</header>
-
-<aside class="sidebar">
-    <div class="sidebar-scrollable">
-        <div class="inner">
-            <div class="widget-area">
-                <!-- 菜单 -->
-                <nav class="site-navigation">
-                    <h2>小九的酒窝</h2>
-                    <ul class="menu">
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="/"
-                                
-                                >首页</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="/tags"
-                                
-                                >标签</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="https://hudaqian.github.io/post/aboutme"
-                                
-                                >关于</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="https://github.com/HuDaQian"
-                                
-                                   target="_blank"
-                                        
-                                >Github</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="https://hudaqian.github.io/GameLibrary/My2048/index.html"
-                                
-                                   target="_blank"
-                                        
-                                >2048</a>
-                            </li>
-                        
-                            <li class="menu-item home current-menu-item">
-                                <a href="https://hudaqian.github.io/GameLibrary/CatGame/index.html"
-                                
-                                   target="_blank"
-                                        
-                                >CatchCat</a>
-                            </li>
-                        
-                    </ul>
-                </nav>
-
-                <section class="widget widget-about">
-                    <h2 class="widget-title">关于</h2>
-                    <p>&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;</p>
-                </section>
-
-                <section class="widget widget-tags">
-                    <h2 class="widget-title">标签</h2>
-                    <div class="tagcloud">
-                        
-                            <a href="https://hudaqian.github.io/tag/Algorithms/" class="button">
-                                算法
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/BaseKnowledge/" class="button">
-                                计算机原理
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/iOS/" class="button">
-                                iOS
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/Internal/" class="button">
-                                网络
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/python/" class="button">
-                                Python
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/MakeMoney/" class="button">
-                                理财
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/DesignPatterns/" class="button">
-                                设计模式
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/javascript/" class="button">
-                                javascript
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/MacOS/" class="button">
-                                MacOS
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                            <a href="https://hudaqian.github.io/tag/spirit/" class="button">
-                                心情
-                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
-                            </a>
-                        
-                    </div>
-                </section>
-
-            </div>
-            <a class="sidebar-toggle"><span class="screen-reader-text">Close</span><span class="icon" aria-hidden="true"></span></a>
-        </div>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://hudaqian.github.io">
+        <img src="https://hudaqian.github.io/images/avatar.png?v=1607243859147" class="site-logo">
+        <h1 class="site-title">小九的酒窝</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-</aside>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://hudaqian.github.io/post/aboutme" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://github.com/HuDaQian" class="site-nav" target="_blank">
+            Github
+          </a>
+        
+      
+        
+          <a href="https://hudaqian.github.io/GameLibrary/My2048/index.html" class="site-nav" target="_blank">
+            2048
+          </a>
+        
+      
+        
+          <a href="https://hudaqian.github.io/GameLibrary/CatGame/index.html" class="site-nav" target="_blank">
+            CatchCat
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <h3>最香不过荷包蛋<br>最美不过夜归人<h3>
+    </div>
+    <div class="site-footer">
+      <h3>Miloy❤️Grace</h3> | <a class="rss" href="https://hudaqian.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-    <main class="site-main">
-        <div class="site-content">
-            <article class="post tag-getting-started">
-                <header class="cover post-header">
-                    <div class="cover-bg"  style="background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);" >
-
-                        
-
-                    </div>
-                    <div class="cover-content">
-                        <div class="inner">
-                            <div class="post-tags">
-                                
-                                    
-                                        <a href="https://hudaqian.github.io/tag/MakeMoney/">理财&nbsp;&nbsp;</a>
-                                    
-                                
-                            </div>
-                            <h1 class="post-title">理财小游戏：第四天</h1>
-                            <div class="post-meta">
-                                <span class="post-meta-wrap">
-                                    <img class="author-avatar"
-                                         srcset="https://hudaqian.github.io/media/images/avatar.png, https://hudaqian.github.io/media/images/avatar.png 2x"
-                                         src="https://hudaqian.github.io/media/images/avatar.png" alt=""/>
-                                    <span class="post-author">714字</span>
-                                    <time class="published" datetime="2019-07-01">2019-07-01</time>
-                                </span>
-                                <div>3 min read</div>
-                            </div>
-                            <a href="#post-content" class="arrow-down" data-scroll><span class="screen-reader-text">Scroll Down</span></a>
-                        </div>
-                    </div>
-                </header>
-                <div class="inner">
-
-                    <div id="post-content" class="post-content">
-                        <p>与岛上各种人周旋之后，你开始总结出自己的经验和技巧，渐渐知道该怎么判断：该把鱼投资给谁：该把鱼借给谁。你发现，鱼还真是个神奇的东西!从每个人对待&quot;鱼&quot;的态度，可以看出这个人对待生活的态度。随着鱼越来越多，岛上掀起了一股关于&quot;鱼&quot;的热潮......</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">理财小游戏：第四天</h2>
+            <div class="post-date">2019-07-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>与岛上各种人周旋之后，你开始总结出自己的经验和技巧，渐渐知道该怎么判断：该把鱼投资给谁：该把鱼借给谁。你发现，鱼还真是个神奇的东西!从每个人对待&quot;鱼&quot;的态度，可以看出这个人对待生活的态度。随着鱼越来越多，岛上掀起了一股关于&quot;鱼&quot;的热潮......</p>
 <p>第一题：好朋友赵铁柱最近也决定创业了。他拍脑门想了一个方案，专门做鱼子羹，名字就叫双子座餐厅，初期资金不足，决定向你求救，借10条鱼</p>
 <ul>
 <li>A.上次全蛋的双鱼火锅辣莫成功，这次不能再错过了一起创立公司!</li>
@@ -230,114 +154,82 @@
 <p><a href="https://hudaqian.github.io/post/MakeMoneyGame_Des4/">点这里查看解析</a></p>
 <p><a href="https://hudaqian.github.io/tag/MakeMoney"> 理财 </a></p>
 
-                    </div>
-
-                </div>
-            </article>
-
-            <section class="comments-area">
-    <div class="inner">
-        <h2 class="screen-reader-text">评论</h2>
-        
+            </div>
             
-                <div id="gitalk-container"></div>
+              <div class="tag-container">
+                
+                  <a href="https://hudaqian.github.io/tag/MakeMoney/" class="tag">
+                    理财
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://hudaqian.github.io/MakeMoneyGame_3/">
+                  <h3 class="post-title">
+                    理财小游戏：第三天
+                  </h3>
+                </a>
+              </div>
             
 
             
-        
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
-</section>
 
-
-            
-                <nav class="post-navigation">
-                    <h2 class="screen-reader-text">Post navigation</h2>
-                    <div class="nav-links">
-                        <a href="https://hudaqian.github.io/MakeMoneyGame_3/" class="nav-previous">
-                            <div class="nav-bg"  style="background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);" >
-                                
-                            </div>
-                            <div class="nav-inside">
-                                <span class="nav-before">下一篇</span>
-                                <span class="nav-title">理财小游戏：第三天</span>
-                                <span class="nav-date">2019-06-30</span>
-                            </div>
-                        </a>
-                    </div>
-                </nav>
-            
-
-        </div>
-    </main>
-
-    <footer class="site-footer">
-    <div class="inner">
-        <!-- 社交 -->
-        <div class="offsite-links">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
-
-        <div class="site-info">
-            THEME BY <a href="https://github.com/GalaxySuze/gridea-theme-subtle-galaxy">Subtle Galaxy</a>, REFERENCE FROM <a href="https://subtle.justgoodthemes.com/">Subtle</a><br/>
-            <h3>Miloy❤️Grace</h3>
-        </div>
-        <a href="#page" class="arrow-up" data-scroll><span class="screen-reader-text">Back to the top</span></a>
-    </div>
-</footer>
-
-
-</div>
-
-<script src="https://hudaqian.github.io/media/scripts/_core/plugins.js"></script>
-<script src="https://hudaqian.github.io/media/scripts/_core/custom.js"></script>
-
-<!-- highlight -->
-<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
-<!-- Md5 Min JS -->
-<script src="https://hudaqian.github.io/media/scripts/_vendors/md5.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script type="application/javascript">
-    // 代码高亮
-    hljs.initHighlightingOnLoad();
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
 
 
-    
-        <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-        <script>
-
-            var gitalk = new Gitalk({
-                clientID: '70e70574c307d3e0aab1',
-                clientSecret: 'f4cac46a3ae606b5b74da444d7e6afbfbdea51d0',
-                repo: 'hudaqian.github.io',
-                owner: 'HuDaQian',
-                admin: ['HuDaQian'],
-                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-                distractionFreeMode: false  // Facebook-like distraction free mode
-            })
-
-            gitalk.render('gitalk-container')
-
-        </script>
-    
-
-    
 
 
+  
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '70e70574c307d3e0aab1',
+        clientSecret: 'f4cac46a3ae606b5b74da444d7e6afbfbdea51d0',
+        repo: 'hudaqian.github.io',
+        owner: 'HuDaQian',
+        admin: ['HuDaQian'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
-</body>
+
+  </body>
 </html>
