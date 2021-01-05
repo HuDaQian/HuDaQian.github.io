@@ -2,14 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hudaqian.github.io</id>
     <title>小九的酒窝</title>
-    <updated>2020-12-06T08:37:42.355Z</updated>
+    <updated>2021-01-05T02:49:52.784Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hudaqian.github.io"/>
     <link rel="self" href="https://hudaqian.github.io/atom.xml"/>
     <subtitle>&lt;h3&gt;最香不过荷包蛋&lt;br&gt;最美不过夜归人&lt;h3&gt;</subtitle>
     <logo>https://hudaqian.github.io/images/avatar.png</logo>
     <icon>https://hudaqian.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 小九的酒窝</rights>
+    <rights>All rights reserved 2021, 小九的酒窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Java实现一个最小堆（或者最大堆）&堆排序]]></title>
+        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_07/</id>
+        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_07/">
+        </link>
+        <updated>2020-12-06T12:18:42.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[重读-《我的第一本算法书》-04 排序]]></title>
+        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_06/</id>
+        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_06/">
+        </link>
+        <updated>2020-12-04T15:35:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>冒泡排序<br>
+选择排序<br>
+插入排序<br>
+归并排序<br>
+快速排序</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>冒泡排序<br>
+选择排序<br>
+插入排序<br>
+归并排序<br>
+快速排序</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java实现双向链表]]></title>
         <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_05/</id>
@@ -23,21 +49,6 @@
         <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_04/">
         </link>
         <updated>2020-12-03T13:43:22.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[重读-《我的第一本算法书》-04 排序]]></title>
-        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_06/</id>
-        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_06/">
-        </link>
-        <updated>2020-12-02T15:35:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>冒泡排序<br>
-选择排序<br>
-归并排序</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>冒泡排序<br>
-选择排序<br>
-归并排序</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[重读-《我的第一本算法书》-03 非线性排列的数据结构]]></title>
@@ -114,12 +125,5 @@
         <link href="https://hudaqian.github.io/ios-codesnippet/">
         </link>
         <updated>2020-06-11T15:07:32.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[解决githubPages搭建的博客打开很慢的问题]]></title>
-        <id>https://hudaqian.github.io/githubPages/</id>
-        <link href="https://hudaqian.github.io/githubPages/">
-        </link>
-        <updated>2020-06-10T01:15:57.000Z</updated>
     </entry>
 </feed>
