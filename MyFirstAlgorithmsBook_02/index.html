@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.min.css">
-<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico?v=1609905136854">
+<link rel="shortcut icon" href="https://hudaqian.github.io/favicon.ico?v=1609926178670">
 <link rel="stylesheet" href="https://hudaqian.github.io/styles/main.css">
 
 
@@ -47,7 +47,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://hudaqian.github.io">
-        <img src="https://hudaqian.github.io/images/avatar.png?v=1609905136854" class="site-logo">
+        <img src="https://hudaqian.github.io/images/avatar.png?v=1609926178670" class="site-logo">
         <h1 class="site-title">小九的酒窝</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -146,14 +146,16 @@
 链表有多个节点链接而成。以单链表为例，当前节点除了存储自身数据以外，还存储了下一个节点的地址。<br>
 链表的数据一般都是分散存储于内存中，无需存储在连续空间内。如果要访问数据的话，只能从第一个数据开始，顺着指针的指向一一向下访问（顺序访问）。但是，如果要添加数据的话，只需要改变添加位置前后指针的指向就可以了。数据的删除也一样简单，改变前面节点的指针指向到删除节点的下级节点就可以了。<br>
 用时间复杂度来描述的话，链表的数据量为n，增加的时间复杂度为O(1)，删除的为O(1), 查询的为O(n)。</p>
-<pre><code>当然，还有首位节点相连的环形链表，节点中两个指针指向上下级节点的双向链表。
+<pre><code>当然，还有首位节点相连的环形链表，
+节点中两个指针指向上下级节点的双向链表。
 不同的应用场景选择使用不同的数据结构。
 </code></pre>
 <h1 id="数组">数组</h1>
 <p>数组也是线性排列的数据结构之一。在数组中，访问数据十分简单，而添加和删除数据比较耗费时间。<br>
 数组内的数据按顺序排列在内存的连续空间内，一般用数组的首位元素的地址来代表数组的地址。由于数据是存储在连续空间内，所以每个数据的内存地址都可以通过数组下表计算出，所以能直接访问目标数据（随机访问）。但是要增加数据的时候，首先要开辟一点空间，保证元素可以正常插入，然后将插入位置之后的元素逐步向后移动，再在空出来的位置上写入新数据。删除则是，先删除目标数据，然后将后边的元素逐步向前移动，随后再删除掉多余的空间。<br>
 用时间复杂度来说，数组的数据量为n，查询的时间复杂度为O(1), 增加的为O(n), 删除的为O(n)。</p>
-<pre><code>在链表和数组中，数据都是线性的排成一列，在链表中增删比较简单，在数组中查询比较简单，
+<pre><code>在链表和数组中，数据都是线性的排成一列，
+在链表中增删比较简单，在数组中查询比较简单，
 我们可以根据哪种操作比较频繁来决定使用哪种数据结构。
 </code></pre>
 <h1 id="栈">栈</h1>
@@ -170,7 +172,9 @@
 查询的时候，取哈希值，取对n的模，然后查找链表。所以查询的效率比单纯的数组要高很多。<br>
 从这种存储方式来看，要看n定义的大小，如果n太小，那么很容易发生哈希冲突，查询效率会差很多，想反，如果n太大的话，则造成空间浪费。</p>
 <pre><code>    使用链表处理哈希冲突这种方法，叫做链地址法。
-    除了这种方法，使用比较广泛的是开放地址法。是指，在冲突发生的时候，立刻计算一个候补地址，将数据存进去，如果仍然有冲突，变继续寻找下一个候补地址，直到有空的地址为止。
+    除了这种方法，使用比较广泛的是开放地址法。
+    是指，在冲突发生的时候，立刻计算一个候补地址，将数据存进去，
+    如果仍然有冲突，变继续寻找下一个候补地址，直到有空的地址为止。
     可以多次使用哈希函数，或者线性探测法等方法来查询候补地址。
 </code></pre>
 <p>Tips：因为哈希表有哈希冲突的情况，所以不能很简单的将其放入线性数据结构中。只是大多数情况都以线性排列的数据呈现，所以在线性排列的数据结构中将其录入。</p>
