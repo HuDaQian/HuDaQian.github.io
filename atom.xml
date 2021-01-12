@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hudaqian.github.io</id>
     <title>小九的酒窝</title>
-    <updated>2021-01-11T01:26:24.776Z</updated>
+    <updated>2021-01-12T00:59:53.011Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hudaqian.github.io"/>
     <link rel="self" href="https://hudaqian.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://hudaqian.github.io/images/avatar.png</logo>
     <icon>https://hudaqian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 小九的酒窝</rights>
+    <entry>
+        <title type="html"><![CDATA[并查集的路径优化]]></title>
+        <id>https://hudaqian.github.io/Algorithms_DisjointSets_02/</id>
+        <link href="https://hudaqian.github.io/Algorithms_DisjointSets_02/">
+        </link>
+        <updated>2021-01-02T13:09:45.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[并查集基础和常规实现方法]]></title>
         <id>https://hudaqian.github.io/Algorithms_DisjointSets_01/</id>
@@ -84,18 +91,5 @@
         <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_04/">
         </link>
         <updated>2020-12-03T13:43:22.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[重读-《我的第一本算法书》-03 非线性排列的数据结构]]></title>
-        <id>https://hudaqian.github.io/MyFirstAlgorithmsBook_03/</id>
-        <link href="https://hudaqian.github.io/MyFirstAlgorithmsBook_03/">
-        </link>
-        <updated>2020-11-29T06:56:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>堆<br>
-二叉查找树</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>堆<br>
-二叉查找树</p>
-]]></content>
     </entry>
 </feed>
