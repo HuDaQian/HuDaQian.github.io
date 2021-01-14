@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>理财小游戏：第七天 | 小九的酒窝</title>
+<title>最小栈 | 小九的酒窝</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -26,8 +26,13 @@
 
 
 
-    <meta name="description" content="随着人们手里的鱼越来越多，岛上开始变得不太平：先是有偷鱼贼，抢鱼盗频繁出没；然后，台风地震又频繁一个接一个地来。嗯，你仔细想想，其实这并不是因为鱼变多而带来的，而是本就存在。从前鱼太少，每天一条就吃掉了，根本没有条件。鱼少有鱼少的活法，嗯，..." />
-    <meta name="keywords" content="理财" />
+    <meta name="description" content="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
+
+push(x) —— 将元素 x 推入栈中。
+pop() —— 删除栈顶的元素。
+top() —— 获取栈顶元素。
+getMin() —— 检索栈中的..." />
+    <meta name="keywords" content="算法" />
   </head>
   <body>
     <div id="app" class="main">
@@ -112,43 +117,106 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">理财小游戏：第七天</h2>
-            <div class="post-date">2019-07-04</div>
+            <h2 class="post-title">最小栈</h2>
+            <div class="post-date">2021-01-09</div>
             
             <div class="post-content" v-pre>
-              <p>随着人们手里的鱼越来越多，岛上开始变得不太平：先是有偷鱼贼，抢鱼盗频繁出没；然后，台风地震又频繁一个接一个地来。嗯，你仔细想想，其实这并不是因为鱼变多而带来的，而是本就存在。从前鱼太少，每天一条就吃掉了，根本没有条件。鱼少有鱼少的活法，嗯，但是鱼多了昵?也要有鱼多时的活法。</p>
-<p>第一题：最近岛上越来越不太平，先是有偷鱼贼，抢鱼盗频繁出没，台风，地震又频繁出现，你感叹世道维艰，应该给自己配置保险，万一出现意外，至少能体面地活着。于是你</p>
+              <p>设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。</p>
 <ul>
-<li>A.给自己买了意外险，花费1条鱼</li>
-<li>B.给自己买好意外险和寿险，花费2条鱼</li>
-<li>C.给自己配置多样的完整的保险，包括意外险，寿险，分红险，储蓄险等，花费8条鱼</li>
-<li>D.光脚的不怕穿鞋的，劳资不配保险</li>
+<li>push(x) —— 将元素 x 推入栈中。</li>
+<li>pop() —— 删除栈顶的元素。</li>
+<li>top() —— 获取栈顶元素。</li>
+<li>getMin() —— 检索栈中的最小元素。</li>
 </ul>
-<p>第二题：很多年轻人慕名而来拜你为师，你决定</p>
-<ul>
-<li>A.成立一家公司让年轻人为你干活，年轻人也可以顺便学习你的经验</li>
-<li>B.拒绝他们</li>
-</ul>
-<p>第三题：岛上还有些原住民很穷，岛上的酋长来和你商量帮帮他们</p>
-<ul>
-<li>A.你决定每天给每户穷苦人家发放2条鱼</li>
-<li>B.你给每个愿意学习捕鱼技术的人发放每人1条鱼</li>
-</ul>
-<p>第四题：大锤最近想买保险，听说你比较了解，来向你请教，你会</p>
-<ul>
-<li>A.想到自己之前一直平安无事，告诉他别花这冤枉钱。</li>
-<li>B.根据你学到的知识给他讲解了一番，并建议他要买</li>
-<li>C.你对保险一窍不通，让他自己做决定</li>
-</ul>
-<p><a href="https://hudaqian.github.io/post/MakeMoneyGame_Des7/">点这里查看解析</a></p>
-<p><a href="https://hudaqian.github.io/tag/MakeMoney"> 理财 </a></p>
+<p>给出两种解决方案：<br>
+1、辅助栈<br>
+思路是使用辅助栈来保存当前节点到之前节点的最小值。代码如下：</p>
+<pre><code>    class MinStack {
+        //  数据栈
+        Deque&lt;Integer&gt; xStack;
+        //  辅助栈
+        Deque&lt;Integer&gt; minStack;
+        //  初始化方法
+        public MinStack() {
+            xStack = new LinkedList&lt;&gt;();
+            minStack = new LinkedList&lt;&gt;();
+            minStack.push(Integer.MAX_VALUE);            
+        }
+        //  入栈
+        public void push (int x) {
+            xStack.push(x);
+            minStack.push(Math.min(minStack.peek(), x));
+        }
+        //  出栈
+        public void pop() {
+            xStack.poll();
+            minStack.poll();
+        }
+        //  获取栈顶元素
+        public int top() {
+            return xStack.peek();
+        }
+        //  获取最小值
+        public int getMin() {
+            return minStack.peek();
+        }
+    }
+</code></pre>
+<p>第二种解法，不使用额外的空间，栈中保存差值。<br>
+思路是栈中保存入栈值和最小值的差值。<br>
+入栈的时候，计算入栈值和最小值的差值，将其入栈，如果小于0，那么更新最小值。<br>
+出栈的时候，如果出栈值小于0，代表这里最小值发生改变，当时入栈的是当前的最小值，出栈值是当前的最小值减去之前的最小值，所以用当前的最小值减去这个差值，就是之前的最小值。<br>
+可以理解为，把栈分割成n段，每段他们的最小值是相同的，栈里保存的是入栈的值和当前最小值的差，而段与段的间隔，就是当前最小值入栈的时候，和前一段最小值的差。<br>
+这里需要注意一点，就是，不能再使用Integer来记录入栈的数据，因为它有可能超出整型的范围。<br>
+代码如下：</p>
+<pre><code>    class MinStack {
+        //  差值栈
+        Deque&lt;Long&gt; xStack;
+        //  当前最小值
+        Integer minValue;
+        public MinStack() {
+            xStack = new LinkedList&lt;&gt;();
+            minValue = Integer.MAX_VALUE;
+        }
+        public void push(int x) {
+            //  差值栈空了 当前没有数据进来
+            if (xStack.isEmpty()) {
+                xStack.push(0L);
+                minValue = x;
+            } else {
+                xStack.push((long)x - minValue);
+                minValue = Math.min(minValue, x);
+            }
+        }
+        public void pop() {
+            long diff = xStack.pop();
+            if (diff &lt; 0) {
+                //  这里pop出minValue
+                minValue = (int)(minValue - diff);
+            } else {
+                //  这里pop出minValue+diff
+            }
+        }
+        public int top() {
+            long diff = xStack.peek();
+            if (diff &lt; 0) {
+                return minValue;
+            } else {
+                return (int)(minValue+diff);
+            }
+        }
+        public int getMin() {
+            return minValue;
+        }
+    }
+</code></pre>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://hudaqian.github.io/tag/MakeMoney/" class="tag">
-                    理财
+                  <a href="https://hudaqian.github.io/tag/Algorithms/" class="tag">
+                    算法
                   </a>
                 
               </div>
@@ -156,9 +224,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://hudaqian.github.io/MakeMoneyGame_6/">
+                <a href="https://hudaqian.github.io/Algorithms_Topological/">
                   <h3 class="post-title">
-                    理财小游戏：第六天
+                    拓扑排序
                   </h3>
                 </a>
               </div>
